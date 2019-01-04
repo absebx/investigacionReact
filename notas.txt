@@ -1,0 +1,69 @@
+Página tutorial.
+https://reactjs.org/docs/hello-world.html
+https://reactjs.org/docs/rendering-elements.html
+https://reactjs.org/docs/components-and-props.html
+https://reactjs.org/docs/state-and-lifecycle.html
+
+Cosas que hacer:
+* REACT
+* MATERIAL UI
+* NODE JS
+
+
+
+---NOTAS CLASES---
+
+1--
+---------------------------
+
+jsx
+element = <h1>Hello world</h1>
+
+XSS (cross-site-scripting)
+Los parametros de los inputs se pasan a string  y después
+se pasan como parametros, para que no ejecute los scripts.
+
+Babel => Compila jsx a un React.createElement()
+
+
+2-- componentes and props
+---------------------------
+
+*Importante*
+
+All React components must act like pure functions with respect to their props.
+
+Todos los componentes de react tienen que ser puros con respecto
+a la información que viene con sus props. El ejecutarlos no modifica los props
+por lo tanto son "(read only)", ya que solamente léen info.
+
+La forma para manejar información de manera que no viole esta
+regla son los llamados STATES
+
+3-- States and Lifecycle
+---------------------------
+https://reactjs.org/docs/state-and-lifecycle.html
+
+6-- Handling events
+
+https://reactjs.org/docs/handling-events.html
+Es super importante darse cuenta que cuando se ejecuta
+la funcion dentro de una clase javascript pierde el "this"
+de la clase, por lo tanto hay que asignarselo
+
+7-- Conditional Rendering
+
+Como jsx son objetos de javascript uno puede asingarlos
+de manera como se quiera, por lo tanto las condicionales se pueden
+asignar de muchas maneras dentro del codigo
+
+8-- List and keys
+
+La key es necesaria SIEMPRE para los elementos dentro del map y tiene
+que ser única con sus hermanos, pero no así con todo.
+Es necesario que se pueda asignar como un key
+
+9-- Forms
+
+Es necesario usar una tecnica llamada, controlled components
+es un componente el cual su valor está controlado por react
